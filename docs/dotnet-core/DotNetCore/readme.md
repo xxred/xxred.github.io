@@ -1,1 +1,1 @@
-# dotnet core66
+# dotnet core

@@ -1,0 +1,15 @@
+{
+  "name": "xxred's notes",
+  "short_name": "notes",
+  "icons": [
+    {
+      "src": "/logo.jpg",
+      "sizes": "540x540",
+      "type": "image/jpeg"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#3eaf7c"
+}
