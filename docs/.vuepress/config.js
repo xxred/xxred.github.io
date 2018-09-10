@@ -11,7 +11,7 @@ module.exports = {
     head: [
         ['link', {
             rel: 'icon',
-            href: `/logo.jpg`
+            href: `/logo.png`
         }],
         ['link', {
             rel: 'manifest',

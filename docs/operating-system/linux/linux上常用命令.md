@@ -12,4 +12,8 @@ top
 free -h
 ```
 
-## 
+## 搜索软件包
+
+|ubuntu|centos|
+|:--:|:--:|
+|apt-cache search dotnet-sdk|yum list | grep mariadb|

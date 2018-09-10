@@ -29,7 +29,7 @@
 
 ## 注意
 
-- request.Form有时候是异常，不可读取
+- request.Form有时候是异常，不可读取，可通过`request.HasFormContentType`来判断
 
 ## 路由
 
@@ -43,6 +43,23 @@
                   name: "default",
                   template: "{controller=Home}/{action=Index}/{id?}");
           });
+```
+
+### 自定义添加路由
+
+- 需要判断路由的默认处理`DefaultHandler`是否为空，否则添加失败
+
+```csharp
+          app.UseRouter(routes =>
+            {
+                if (routes.DefaultHandler == null) routes.DefaultHandler = app.ApplicationServices.GetRequiredService<MvcRouteHandler>();
+
+                // 区域路由注册
+                routes.MapRoute(
+                    name: "CubeAreas",
+                    template: "{area=Admin}/{controller=Index}/{action=Index}/{id?}"
+                );
+            });
 ```
 
 ## 区域
@@ -211,6 +228,11 @@ app.UseStaticHttpContext();
         opt.ModelBinderProviders.Insert(0,new EntityModelBinderProvider());
     });
 ```
+
+### 模型绑定注意事项
+
+- 自定义的模型绑定需要自己实现属性填充，框架并不会再为模型填充属性
+- 自带的模型绑定是自动注册的，实现了基本类型的绑定，比如数组、字典、枚举、二进制数据，复杂类型绑定绑定过程会根据属性的类型选择上述的绑定器实现属性绑定
 
 ## 过滤器Filter
 

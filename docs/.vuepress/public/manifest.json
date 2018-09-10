@@ -3,9 +3,9 @@
   "short_name": "notes",
   "icons": [
     {
-      "src": "/logo.jpg",
-      "sizes": "540x540",
-      "type": "image/jpeg"
+      "src": "/icons/logo-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
     }
   ],
   "start_url": "/index.html",

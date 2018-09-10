@@ -32,6 +32,6 @@ $tocContent =  $tocContent + "                ]" + "            }]"
 $tocContent[0] = "        sidebar: {"
 $tocContent  = $tocContent + ("        }")
 
-$tocContent | Out-File -FilePath "temp-sidebar.json" -Encoding "utf8"
+$tocContent | Out-File -FilePath "sidebar-temp.json" -Encoding "utf8"
 
 Write-Host "********************generate sidebar end!***********************"
