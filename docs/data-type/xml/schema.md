@@ -102,5 +102,127 @@ xsi:schemaLocation="http://www.w3school.com.cn note.xsd">
 
 ## 设计自己的XML Schema
 
+- 具备上述基础，就可以看得懂一个`XML Schema`了，先看一个实例，后面再具体讲解
+- 实例链接`http://www.w3school.com.cn/schema/schema_example.asp`
+
 ## 实例
 
+- 有一份XML，格式如下
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Tables Version="9.6.6663.16294" NameSpace="XCode.Membership" ConnName="Membership" Output="" BaseClass="Entity">
+  <Table Name="User" Description="用户" DbType="SqlServer" RenderGenEntity="true">
+    <Columns>
+      <Column Name="ID" DataType="Int32" Identity="True" PrimaryKey="True" Description="编号" />
+      <Column Name="Name" DataType="String" Master="True" Nullable="False" Description="名称。登录用户名" />
+      <Column Name="Password" DataType="String" Description="密码" />
+      <Column Name="DisplayName" DataType="String" Description="昵称" />
+    </Columns>
+    <Indexes>
+      <Index Columns="Name" Unique="True" />
+      <Index Columns="RoleID" />
+    </Indexes>
+  </Table>
+    <Table Name="Role" Description="角色" RenderGenEntity="true">
+    <Columns>
+      <Column Name="ID" DataType="Int32" Identity="True" PrimaryKey="True" Description="编号" />
+      <Column Name="Name" DataType="String" Master="True" Nullable="False" Description="名称" />
+      <Column Name="Remark" DataType="String" Description="说明" />
+    </Columns>
+    <Indexes>
+      <Index Columns="Name" Unique="True" />
+    </Indexes>
+  </Table>
+</Tables>
+```
+
+- 为上述XML设计一份Schema
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ModelSchema"
+    targetNamespace="http://www.newlifex.com/ModelSchema.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://www.newlifex.com/ModelSchema.xsd"
+    xmlns:mstns="http://www.newlifex.com/ModelSchema.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:annotation>
+    <xs:documentation xml:lang="zh-cn">
+      新生命模型XML架构说明
+    </xs:documentation>
+  </xs:annotation>
+
+  <xs:element name="Tables" type="TablesType"></xs:element>
+
+  <xs:complexType name="TablesType">
+    <xs:sequence>
+      <xs:element name="Table" type="TableType" maxOccurs="unbounded" ></xs:element>
+    </xs:sequence>
+    <xs:attribute name="Version" type="xs:string"></xs:attribute>
+    <xs:attribute name="NameSpace" type="xs:string"></xs:attribute>
+    <xs:attribute name="ConnName" type="xs:string"></xs:attribute>
+    <xs:attribute name="Output" type="xs:string"></xs:attribute>
+    <xs:attribute name="BaseClass" type="xs:string"></xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="TableType">
+    <xs:annotation>
+      <xs:documentation xml:lang="zh-cn">
+        一个Table对应一个数据库表
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Columns" type="ColumnsType"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="Name" type="xs:string" use="required"></xs:attribute>
+    <xs:attribute name="TableName" type="xs:string">
+      <xs:annotation>
+        <xs:documentation xml:lang="zh-cn">
+          数据库表名，为空则默认为Name
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="Description" type="xs:string">
+      <xs:annotation>
+        <xs:documentation xml:lang="zh-cn">
+          表描述
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="DbType" type="xs:string"></xs:attribute>
+    <xs:attribute name="RenderGenEntity" type="xs:string"></xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="ColumnsType">
+    <xs:sequence>
+      <xs:element name="Column" type="ColumnType" maxOccurs="unbounded"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ColumnType">
+    <xs:attribute name="Name" type="xs:string"></xs:attribute>
+    <xs:attribute name="DataType" type="xs:string">
+      <xs:annotation>
+        <xs:documentation xml:lang="zh-cn">
+          数据类型
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="Identity" type="xs:string"></xs:attribute>
+    <xs:attribute name="PrimaryKey" type="xs:string"></xs:attribute>
+    <xs:attribute name="Description" type="xs:string"></xs:attribute>
+    <xs:attribute name="Type" type="xs:string"></xs:attribute>
+    <xs:attribute name="Length" type="xs:string"></xs:attribute>
+    <xs:attribute name="Master" type="xs:string"></xs:attribute>
+    <xs:attribute name="Nullable" type="xs:string"></xs:attribute>
+  </xs:complexType>
+</xs:schema>
+```
+
+### 实际效果
+
+- 注释提示，属性提示
+
+- 不合法元素提示
