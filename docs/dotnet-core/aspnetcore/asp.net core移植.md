@@ -23,9 +23,6 @@
 |Request.UserAgent|Request.Headers[HeaderNames.UserAgent]||
 |Response.Output|new StreamWriter(HttpContext.Response.Body)||
 |System.Runtime.Caching|Microsoft.Extensions.Caching.Memory||
-||||
-||||
-||||
 
 ## 注意
 
@@ -168,7 +165,7 @@ app.UseStaticHttpContext();
 
 ### 视图引擎
 
-
+- 待补充
 
 ## 模型绑定
 
@@ -212,7 +209,7 @@ app.UseStaticHttpContext();
 ```csharp
     public class EntityModelBinderProvider : IModelBinderProvider
     {
-        public IModelBinder GetBinder(ModelBinderProviderContext context) => 
+        public IModelBinder GetBinder(ModelBinderProviderContext context) =>
         context.Metadata.ModelType.As<IEntity>() ? new EntityModelBinder() : null;
     }
 ```
@@ -241,7 +238,7 @@ app.UseStaticHttpContext();
   - 过滤器在中间件之后执行
   - 异常筛选器在action执行之后执行，仅能捕获mvc流程中action中发生的异常
 
-## 上传文件大小限制
+## 上传文件（表单内容）大小限制
 
 - https://stackoverflow.com/questions/38698350/increase-upload-file-size-in-asp-net-core
 
@@ -252,14 +249,30 @@ app.UseStaticHttpContext();
 }
 ```
 
+- 或者
+
+```csharp
+// 设置表单内容限制
+services.Configure<FormOptions>(formOptions =>
+{
+    formOptions.ValueLengthLimit = int.MaxValue; // 表单内容大小限认4194304，单位byte
+    formOptions.MultipartBodyLengthLimit = int.MaxValue; // multipart，默认134217728
+});
+```
+
 ## 数据验证
 
-- ValidateAntiForgeryToken
+- 待补充
 
 ## 模型绑定验证
 
+- 待补充
+
 ## 响应流写入、设置、推送
+
+- 待补充
 
 ## 登录授权
 
 - https://stackoverflow.com/questions/46853920/net-core-authentication
+- 待补充
