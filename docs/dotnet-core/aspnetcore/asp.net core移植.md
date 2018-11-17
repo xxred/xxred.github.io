@@ -8,7 +8,8 @@
 |Asp. Net Mvc | ASP. NET Core|说明|
 |:--|:--|:--:|
 |FormsAuthenticationTicket|AuthenticationTicket|参考Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler的HandleSignInAsync方法|
-|HttpRuntime.AppDomainAppVirtualPath||据说已被干掉，用不到|
+|HttpResponse.Filter|Microsoft.AspNetCore.ResponseCompression|类似过滤器功能的可能由中间件代替了，比如压缩功能|
+|HttpRuntime.AppDomainAppVirtualPath|#|据说已被干掉，用不到|
 |HttpRuntime.AppDomainAppPath|(IHostingEnvironment)Env.ContentRootPath||
 |HttpPostedFileBase|IFormFile||
 |ActionDescriptor.IsDefined|ControllerActionDescriptor.MethodInfo.IsDefind|ActionDescriptor需要转换成ControllerActionDescriptor|
@@ -23,6 +24,7 @@
 |Request.UserAgent|Request.Headers[HeaderNames.UserAgent]||
 |Response.Output|new StreamWriter(HttpContext.Response.Body)||
 |System.Runtime.Caching|Microsoft.Extensions.Caching.Memory||
+
 
 ## 注意
 
@@ -276,3 +278,7 @@ services.Configure<FormOptions>(formOptions =>
 
 - https://stackoverflow.com/questions/46853920/net-core-authentication
 - 待补充
+
+## 压缩
+
+- http://www.cnblogs.com/savorboard/p/aspnetcore-response-compression-caching.html
