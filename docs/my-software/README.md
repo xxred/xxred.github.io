@@ -6,7 +6,7 @@
 
 ## 一起安装
 
-- `choco upgrade googlechrome 7zip.install git nodejs.install tim dotnetcore-sdk -y`
+- `choco upgrade googlechrome 7zip.install git tortoisegit nodejs.install tim dotnetcore-sdk -y`
 
 ## IDE & Editor
 
