@@ -37,7 +37,7 @@
 ## nuget包中使用targets
 
 - 请参考这两篇博客，[在NuGet包中提供跨平台的MSBuild任务](https://natemcmaster.com/blog/2017/07/05/msbuild-task-in-nuget/) 、[在NuGet中捆绑.NET构建工具](https://natemcmaster.com/blog/2017/11/11/build-tools-in-nuget/)
-- 文件的命名很重要PackageId + ".targets",NuGet会忽略其他文件
+- 文件的命名很重要PackageId + ".targets",NuGet会忽略其他文件，[参考](https://docs.microsoft.com/zh-cn/nuget/create-packages/native-packages)
 
 ## 调试
 
