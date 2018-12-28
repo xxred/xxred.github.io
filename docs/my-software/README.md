@@ -10,9 +10,13 @@
 
 ## IDE & Editor
 
-- Visual Studio 2017 Enterprise - `choco install visualstudio2017enterprise`
-- Visual Studio Code - `choco install vscode`
+- Visual Studio 2017 Enterprise - `choco install visualstudio2017enterprise -y`
+- Visual Studio Code - `choco install vscode -y`
 
 ## browser
 
-- Chrome - `choco install googlechrome`
+- Chrome - `choco install googlechrome -y`
+
+## docker
+
+- docker - `choco install docker-desktop -y`
