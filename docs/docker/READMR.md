@@ -171,8 +171,8 @@ PS C:\Users\12504>
 
 ### 界面管理
 
-- [一篇博文](https://www.cnblogs.com/sky-chen/p/9928055.html)
-- [Portainer](https://www.portainer.io/installation/)
+- 可视化Docker管理，支持多主机[Portainer](https://www.portainer.io/installation/)
+- 开源的企业级容器管理平台[rancher](https://rancher.com/)
 
 ## 总结
 
