@@ -10,6 +10,7 @@
 - [中文安装文档](https://docs.docker-cn.com/docker-for-windows/install/)
 - 如果装有[chocolatey](https://chocolatey.org/)，没有的话安装也很快[命令行安装](https://chocolatey.org/install/)，建议用powershell执行`choco install docker-desktop -y`安装Docker
 - 安装完需要重启完成完整安装
+- win10以下版本需要安装[Docker Toolbox](https://docs.docker.com/toolbox/overview/)
 
 ```powershell
 PS C:\WINDOWS\system32> choco install docker-desktop -y
