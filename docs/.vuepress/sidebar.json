@@ -13,6 +13,13 @@
             "schema.md"
         ]
     }],
+    "/desktop-app-dev-with-html/": [{
+        "title": "desktop-app-dev-with-html",
+        "children": [
+            "",
+            "vuido.md"
+        ]
+    }],
     "/dev-tool/visualstudio/": [{
         "title": "visualstudio",
         "children": [
@@ -44,11 +51,19 @@
             "设置.md"
         ]
     }],
+    "/docker/": [{
+        "title": "docker",
+        "children": [
+            "",
+            "wsl-docker.md"
+        ]
+    }],
     "/dotnet-core/aspnetcore/": [{
         "title": "aspnetcore",
         "children": [
             "",
             "asp.net core移植.md",
+            "health-checks.md",
             "razor-page-library.md",
             "中间件.md",
             "坑坑更健康.md",
@@ -56,8 +71,8 @@
             "路由.md"
         ]
     }],
-    "/dotnet-core/dotnetcore/": [{
-        "title": "dotnetcore",
+    "/dotnet-core/DotNetCore/": [{
+        "title": "DotNetCore",
         "children": [
             "",
             "dotnet-cli常用命令.md",
@@ -124,6 +139,7 @@
         "title": "windows",
         "children": [
             "",
+            "ip-port.md",
             "settings.md",
             "WinServer2008r2-IIS.Administration.md",
             "添加右键快捷方式.md"
