@@ -22,7 +22,6 @@ steps:
       displayName: '下载gh-pages'
     - powershell: |
         CD vuepress
-    - powershell: |
         git add -A 2>&1
         git commit -m "CI Updates" -q
         git push origin gh-pages -q
