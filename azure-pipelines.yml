@@ -10,5 +10,5 @@ steps:
           versionSpec: 10.x
     - script: npm install
     - script: npm build
-    - script: git -v
-    - script: yarn -v
+    - script: git --version
+    - script: yarn --version
