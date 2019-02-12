@@ -14,6 +14,7 @@ steps:
         git config --global core.autocrlf false # 禁止自动完成标准化与转换（CRLF 与 LF 自动转换）
         git config --global user.email xxred0324@qq.com
         git config --global user.name xxred
+    - powershell: | 
         git clone https://github.com/xxred/xxred.github.io.git -b gh-pages origin_site -q
         rm origin_site/* -recurse
         Copy-Item origin_site/.git vuepress -recurse
