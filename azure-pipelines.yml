@@ -22,8 +22,12 @@ steps:
       displayName: '下载gh-pages'
     - powershell: |
         ls
+        pwd
         CD vuepress
+        pwd
+        ls
         git add -A 2>&1
+        pwd
         git commit -m "CI Updates" -q
         git push origin gh-pages -q
       displayName: '发布提交'
