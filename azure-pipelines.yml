@@ -21,6 +21,7 @@ steps:
         Copy-Item origin_site/.git vuepress -recurse
       displayName: '下载gh-pages'
     - powershell: |
+        ls
         CD vuepress
         git add -A 2>&1
         git commit -m "CI Updates" -q
