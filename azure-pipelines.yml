@@ -8,10 +8,9 @@ steps:
     - task: NodeTool@0
       inputs:
           versionSpec: 10.x
-    - script: |
-        npm install yarn -g
-        yarn install
-        yarn build
+    - script: npm install yarn -g
+    - script: yarn install
+    - script: yarn build
       displayName: '安装依赖&构建'
     - powershell: |
         git config --global credential.helper store
