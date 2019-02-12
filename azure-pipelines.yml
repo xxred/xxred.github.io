@@ -8,8 +8,11 @@ steps:
     - task: NodeTool@0
       inputs:
           versionSpec: 10.x
-    - script: npm install
-    - script: npm run build
+    - script: |
+        npm install yarn -g
+        yarn install
+        yarn build
+      displayName: '安装依赖&构建'
     - powershell: |
         git config --global credential.helper store
         git config --global core.autocrlf false # 禁止自动完成标准化与转换（CRLF 与 LF 自动转换）
