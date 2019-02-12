@@ -9,8 +9,8 @@ steps:
       inputs:
           versionSpec: 10.x
     - script: npm install
-    - script: npm build
-    - script: |
+    - script: npm run build
+    - powershell: |
         git clone https://github.com/xxred/xxred.github.io.git -b gh-pages origin_site -q
         rm origin_site/* -recurse
         Copy-Item origin_site/.git vuepress -recurse
