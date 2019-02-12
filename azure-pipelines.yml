@@ -15,7 +15,7 @@ steps:
         git config --global user.email xxred0324@qq.com
         git config --global user.name xxred
         Add-Content "$env:USERPROFILE\.git-credentials" "https://$(github-token):x-oauth-basic@github.com`n"
-        ADD github-token
+        Write-Host $(github-token) + $env:USERPROFILE
       displayName: '配置git信息'
     - powershell: | 
         git clone https://github.com/xxred/xxred.github.io.git -b gh-pages origin_site -q
