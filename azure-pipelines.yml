@@ -28,8 +28,8 @@ steps:
     - powershell: |
         pwd
         CD vuepress
-        pwd
         git add -A 2>&1
+        pwd
         git commit -m "CI Updates" -q
         git push origin gh-pages -q
       displayName: '发布提交'
