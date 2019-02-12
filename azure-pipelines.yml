@@ -18,8 +18,8 @@ steps:
         git clone https://github.com/xxred/xxred.github.io.git -b gh-pages origin_site -q
         rm origin_site/* -recurse
         Copy-Item origin_site/.git vuepress -recurse
+    - powershell: |
         CD vuepress
         git add -A 2>&1
         git commit -m "CI Updates" -q
         git push origin gh-pages -q
-        write-host '发布成功'
