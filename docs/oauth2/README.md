@@ -114,6 +114,12 @@
 - IEndpointHandler，Endpoint 端点，根据 url 匹配 Endpoint，处理并响应请求
 - IAuthorizeRequestValidator，授权请求验证，可校验客户端参数、类型是否跟已注册客户端一致
 
+框架提供的自定义验证，即在默认验证实现中加入自定义验证
+
+- ICustomAuthorizeRequestValidator，允许在授权和令牌请求中插入自定义验证逻辑
+- ICustomTokenRequestValidator，允许在授权和令牌请求中插入自定义验证逻辑
+- ICustomTokenValidator，允许插入自定义令牌验证逻辑
+
 ## 总结
 
 - 入门过程不能太急躁，首先过一下相关概念，然后跑一下具体的例子，仔细感受例子，尽量跟相关概念对上号，慢慢对上所有概念，这时候就会对相关概念进一步加深理解。
