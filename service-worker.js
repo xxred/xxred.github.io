@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "0e6c3cc02b99e5d0aba788a0f335d8c0"
+    "revision": "0bd38aea2abda861bf12c99b2d19801b"
   },
   {
     "url": "assets/css/0.styles.382af5d5.css",
@@ -436,260 +436,260 @@ self.__precacheManifest = [
     "revision": "3ea4a34411ffbd6e8f290b161505f926"
   },
   {
-    "url": "assets/js/app.5fc01cc4.js",
-    "revision": "64b062b74995b99bfb9e8f31dc49cebd"
+    "url": "assets/js/app.33ebf5a5.js",
+    "revision": "bc7348333f12d71fbbe58f248d597a42"
   },
   {
     "url": "awesome-collection/architect-awesome/index.html",
-    "revision": "3c0193d84dc0d0e6719e0591deca2eb0"
+    "revision": "ed9d05cdb3b84e4ce468c3bca8fed1f4"
   },
   {
     "url": "awesome-collection/index.html",
-    "revision": "2e75872521646fd1f8287c2f29b06c20"
+    "revision": "83f3d271bb3fbb5540c4dfe7a4483244"
   },
   {
     "url": "character-coding/index.html",
-    "revision": "61a2da1f3625522ae934647464cdad52"
+    "revision": "87cca926b0f83f240be5d78a5fba1b56"
   },
   {
     "url": "character-coding/字符编码.html",
-    "revision": "f02bbf89a8f780948894c86bde71da41"
+    "revision": "9486db63280d70e928c7d0a4f6a0a10b"
   },
   {
     "url": "data-type/xml/index.html",
-    "revision": "65368ce6a441885dad9925abdecc0d1a"
+    "revision": "42f604360f2eac09b397ec8c45a9391e"
   },
   {
     "url": "data-type/xml/schema.html",
-    "revision": "f383c63bebfb2e254f7dc804d80db04c"
+    "revision": "e9ff122c7a882d4cfeb7c2047fa9270e"
   },
   {
     "url": "db/index.html",
-    "revision": "5bd6e7e5b657aa394308efcaea095e52"
+    "revision": "b451e20e5b8180a81fdafbb30a1b3da5"
   },
   {
     "url": "db/mysql/index.html",
-    "revision": "4344300cb4793a34ebfb1888dd01a35a"
+    "revision": "64e0666ff486192b085678dad9601842"
   },
   {
     "url": "desktop-app-dev-with-html/index.html",
-    "revision": "5b96a4f9590b731863609be5e9b87ab4"
+    "revision": "c1a4df53b6eabd4d644a8b69844b3458"
   },
   {
     "url": "desktop-app-dev-with-html/vuido.html",
-    "revision": "fed9ababff05232cab03624eed9a16d6"
+    "revision": "63b42091c58fffed6c5b0c378b0fdf86"
   },
   {
     "url": "dev-tool/visualstudio-code/index.html",
-    "revision": "7c6616704f141a33430803478fd3ed15"
+    "revision": "8ff6f72a51a7dc23c2eac6edd3dc6ca5"
   },
   {
     "url": "dev-tool/visualstudio-code/linux上的使用.html",
-    "revision": "cc3f5068ba1831c4157fab16635eb169"
+    "revision": "faae200cc5e555a45397ceae5a35f40a"
   },
   {
     "url": "dev-tool/visualstudio-code/Markdown/index.html",
-    "revision": "ee9a01652221fd821e52b18d4f063dd3"
+    "revision": "dcb85ea55f86f95fc3f04490ffab214d"
   },
   {
     "url": "dev-tool/visualstudio-code/Markdown/相关操作.html",
-    "revision": "24fc96ad912ec50b6e0fab56627c87e6"
+    "revision": "426bbae20bd7bda181c928fd9393afc9"
   },
   {
     "url": "dev-tool/visualstudio-code/同步设置.html",
-    "revision": "b00fafdbbfb672ddb14cdebc7870a767"
+    "revision": "d011ada336943870c0a9e883b9571b8f"
   },
   {
     "url": "dev-tool/visualstudio-code/插件.html",
-    "revision": "7355f63924b875b17a303e03c2d99660"
+    "revision": "8e08c155471ce973606533dddf691168"
   },
   {
     "url": "dev-tool/visualstudio-code/设置.html",
-    "revision": "b683cc703c934a457c0f46adb7125c64"
+    "revision": "0f40246f7c52d645b78dace8c92fd80b"
   },
   {
     "url": "dev-tool/visualstudio/index.html",
-    "revision": "5804519c986eed41ce7826f06542ee10"
+    "revision": "d85ae758ce82ef20ee0542c0c60a210e"
   },
   {
     "url": "dev-tool/visualstudio/LibManager.html",
-    "revision": "361898193bb814af30a79105476aa606"
+    "revision": "65cccc7ef8e92b74ff6fd0c95f8ac563"
   },
   {
     "url": "dev-tool/visualstudio/MSBuildTasks.html",
-    "revision": "e0749adad0166aed95c349895b86cd85"
+    "revision": "d3b641edbf9eaad604dc40ab15c54355"
   },
   {
     "url": "dev-tool/visualstudio/MsBuild属性元数据.html",
-    "revision": "80105c74a399b9bfc789b339c9c2ebec"
+    "revision": "b08b236123cab848c08d49ca90d9c9fe"
   },
   {
     "url": "dev-tool/visualstudio/nuget.html",
-    "revision": "81b3dc30ed9a3616abf99b78bbd29ba6"
+    "revision": "41dec285c50099ed120a6d624dfe1dfb"
   },
   {
     "url": "dev-tool/visualstudio/多平台项目合并成单项目.html",
-    "revision": "f76c9617136e562abe26fef8ca89db88"
+    "revision": "d8e95e1701bb56b658b4b8b9686abb66"
   },
   {
     "url": "dev-tool/visualstudio/折叠代码.html",
-    "revision": "7c34f3a832293aaf4c262808dc252b31"
+    "revision": "b57f441bb7a72ede0e64a4295b000cd8"
   },
   {
     "url": "dev-tool/visualstudio/调试.html",
-    "revision": "143ca87be3309c54f68753cbd71d83d5"
+    "revision": "312b886011a943f164221eba6e5f4888"
   },
   {
     "url": "dev-tool/visualstudio/项目报错.html",
-    "revision": "760659c23fa6f26b30ae2bd3d7a169c1"
+    "revision": "d9d7352e2101fe3fb3227d3f86a2c2e9"
   },
   {
     "url": "development-experience/index.html",
-    "revision": "b9af5145cad0cf0b23e6f1775bfe3ab3"
+    "revision": "e78d05203237354e74409eb4fb6f4b06"
   },
   {
     "url": "docker/index.html",
-    "revision": "5706795ce0fc97d1db4c89e71c49594f"
+    "revision": "e5e777b5977686c68153d4a0005f0295"
   },
   {
     "url": "docker/wsl-docker.html",
-    "revision": "686756e88a6b4fd76900e41da1cc8014"
+    "revision": "d45b92124949c69d2f1e8d0ea198f5ef"
   },
   {
     "url": "dotnet-core/aspnetcore/asp.net core移植.html",
-    "revision": "8ec2450de68234db523cadc45e5f684a"
+    "revision": "c26220fc236e2e44a1f20c0d5c815dd1"
   },
   {
     "url": "dotnet-core/aspnetcore/health-checks.html",
-    "revision": "14cf8ccf2c103602c8299cf64941a403"
+    "revision": "96aeef56f99e26cc5e92149d9a017270"
   },
   {
     "url": "dotnet-core/aspnetcore/index.html",
-    "revision": "29e5b1efc5c629fb8aba39f6626b3eef"
+    "revision": "b06456b4204981a846bbdb90a2c52596"
   },
   {
     "url": "dotnet-core/aspnetcore/razor-page-library.html",
-    "revision": "d06d77702698a4e02361622c604fb121"
+    "revision": "c0ce671e2a906e7ebd7df958c40fda9a"
   },
   {
     "url": "dotnet-core/aspnetcore/中间件.html",
-    "revision": "0d04a51637f238f6a6d9f67c46d8547d"
+    "revision": "22ee30337ea17b260a405114383be4a0"
   },
   {
     "url": "dotnet-core/aspnetcore/坑坑更健康.html",
-    "revision": "50cb022143223b49b64e9320bce8b1d5"
+    "revision": "68ff8af5aaaaefab421082f87004e616"
   },
   {
     "url": "dotnet-core/aspnetcore/搭建基于Asp.NetCore-Vue的SPA项目.html",
-    "revision": "e08488436b5175f81743da9c8019bac7"
+    "revision": "4f6f856e9c55b2fe2fa8d80a4e64f59a"
   },
   {
     "url": "dotnet-core/aspnetcore/路由.html",
-    "revision": "ffe36eef102f3756ef617c8a9ebb800d"
+    "revision": "d95598696bf73afc29b133689b0c6e90"
   },
   {
     "url": "dotnet-core/DotNetCore/dotnet-cli常用命令.html",
-    "revision": "edbd185dcfe83ba9afdf26bcd4a4a512"
+    "revision": "07952d0606ae56e7e9ec5b59dd9dd4cb"
   },
   {
     "url": "dotnet-core/DotNetCore/index.html",
-    "revision": "aee550e4e82d8c0a2cc816b82c8064b7"
+    "revision": "cac13f3abca27851f23e8aeb60b0fe2c"
   },
   {
     "url": "dotnet-core/DotNetCore/linux下安装.html",
-    "revision": "19f1ac899d5e486b2d036a2c6679d85f"
+    "revision": "fe66e8360df0e56311fd8a5637c04cdd"
   },
   {
     "url": "dotnet-core/DotNetCore/window安装dotnet.html",
-    "revision": "b84ed9b9d70875b808a5f98ac57b3e47"
+    "revision": "efaba2040ce15458ce5d349f525077b4"
   },
   {
     "url": "dotnet-core/DotNetCore/常用api.html",
-    "revision": "aa9dcc9912a649975929dbcbcb42ffa9"
+    "revision": "05b3446fd1b223738335609c84b7286d"
   },
   {
     "url": "dotnet-core/DotNetCore/版本问题.html",
-    "revision": "d553e17885244792edefb45b37ed6dc3"
+    "revision": "6f3e918b97cbae5aa365374d4dfa123e"
   },
   {
     "url": "dotnet-core/index.html",
-    "revision": "42310558f12e842ab12f158ff97ad31a"
+    "revision": "74b2cd50c9a3e91e79f7461cd5d52bcb"
   },
   {
     "url": "easy-admin/index.html",
-    "revision": "a0ae2a467d7172abf5c12d3e028f8ab3"
+    "revision": "c2bac47ceaabb4db065f3f709d9fb958"
   },
   {
     "url": "electron/index.html",
-    "revision": "ea89887997a9f20fc62e276162f97740"
+    "revision": "351c319b78b0fa2a8b49ab45d81fad98"
   },
   {
     "url": "feelings/index.html",
-    "revision": "e0b690cff7ec4782293bdd3d36275958"
+    "revision": "a48810dd3df0af9e0aeeb3e39f8632d1"
   },
   {
     "url": "feelings/软件工程师分级.html",
-    "revision": "2b25663ab756423d91e4df52f8a8eff9"
+    "revision": "749b0a5e87008a3f520bd385a82355fb"
   },
   {
     "url": "file-uploader/index.html",
-    "revision": "222aff3b359dd825d3713572016ce763"
+    "revision": "58a109a56907aa99b3acffe604fbc50c"
   },
   {
     "url": "front-end/debug/index.html",
-    "revision": "cd14d440b842b00f6a970f1c47f7a361"
+    "revision": "c2632c20d40c968425d126e0356e7745"
   },
   {
     "url": "front-end/index.html",
-    "revision": "56d49c5d1c8ac913b482d7f6dc2594bd"
+    "revision": "50e57da153243de7c952251d4fe0712f"
   },
   {
     "url": "front-end/iview/index.html",
-    "revision": "145ae8722f2e2492f87f669427818574"
+    "revision": "9ed7649957aede42ed3a783a8e353054"
   },
   {
     "url": "front-end/iview/注意事项和技巧.html",
-    "revision": "a24cbfc40a1a05c2f4db591657de5a48"
+    "revision": "099862b35aee8e3fc3a01440befefd70"
   },
   {
     "url": "front-end/iview/高级组件.html",
-    "revision": "d9e138a37070070ba31b4c9abeaa0b66"
+    "revision": "e5a6c496e3addd04bddda9dc6870ca87"
   },
   {
     "url": "front-end/nodejs/index.html",
-    "revision": "315c1037ed7b880495456f2fbeaa5f1f"
+    "revision": "b72c2536713972cd110e0895c12e425a"
   },
   {
     "url": "front-end/vuejs/error-exception.html",
-    "revision": "d787f9f6244fed7cd2aecc4ffffaf723"
+    "revision": "56e7a9f5547b15590e34e5d130308568"
   },
   {
     "url": "front-end/vuejs/index.html",
-    "revision": "704dd6e009f889f0c72b24fed737db01"
+    "revision": "d97662313184a1abfbad99bec8e9c310"
   },
   {
     "url": "front-end/vuejs/router.html",
-    "revision": "2745074956160557d58912937c499912"
+    "revision": "72dc306210d2d0bb028fab8e6c27ffce"
   },
   {
     "url": "front-end/vuejs/vue项目从零搭建.html",
-    "revision": "11c3184d630859a46cb347e82bd60e9c"
+    "revision": "2b715528576251419dc664f9e3dcdba8"
   },
   {
     "url": "front-end/webpack/analysis-compiling-result-and-running.html",
-    "revision": "bae90f28f2cdb891dbbc1b2a8ead524a"
+    "revision": "7a4947567e9aa908b4c2af4e69ebb02b"
   },
   {
     "url": "front-end/webpack/index.html",
-    "revision": "68476497d4fa5362aba625cb291c6701"
+    "revision": "e371be241fa66f788a2055d76e994465"
   },
   {
     "url": "front-end/各种异常.html",
-    "revision": "04e606f88fdedebafec910302749d478"
+    "revision": "1a0136dc3f1605d45e43d67734ae67ef"
   },
   {
     "url": "git/index.html",
-    "revision": "8f9bdc984d29c7c668109c64ad8c87bf"
+    "revision": "6721d0a2cc26e0435042cfb8f073c0ef"
   },
   {
     "url": "hero.jpg",
@@ -705,11 +705,11 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "76a8496df7cc09940f1d551586f3e84e"
+    "revision": "bcfa329dfdad95ec70ac84d8c3b8a4d7"
   },
   {
     "url": "intelligent-speech/index.html",
-    "revision": "a28322eed20fee3ab72f1d127eb9a605"
+    "revision": "5d88267899b1e70b96c7c07ee4e50b26"
   },
   {
     "url": "logo.png",
@@ -717,135 +717,135 @@ self.__precacheManifest = [
   },
   {
     "url": "my-software/index.html",
-    "revision": "4490500a0b50980d6e2cd9b1b06bef63"
+    "revision": "4f78ad596e3f9f693c6ce24811571ff1"
   },
   {
     "url": "newlifex/index.html",
-    "revision": "eb7bccd4a01008618af502445dae2a7e"
+    "revision": "ccadef5b0b042fa77508cbaffc2723d0"
   },
   {
     "url": "newlifex/Redis100亿小数据.html",
-    "revision": "9f5d68e6ff0e78052630c660dc30f16b"
+    "revision": "a651f38a49c461abe03d3e8b6baf3e14"
   },
   {
     "url": "oauth2/index.html",
-    "revision": "8c4ef49c9c480b0e03cb1b48befaa866"
+    "revision": "89e495f1abb8f72d9b6c8be22402ca32"
   },
   {
     "url": "operating-system/linux/index.html",
-    "revision": "584c9c65900e6e407457759c742654d0"
+    "revision": "26a4eccd1508ac4bb4d74a091a6ae42a"
   },
   {
     "url": "operating-system/linux/linux上常用命令.html",
-    "revision": "4ff33ea3fc7dec2cd17a51ab2f00b632"
+    "revision": "cfdc97785885f7817786b02f1c84ea8e"
   },
   {
     "url": "operating-system/linux/通用常用命令.html",
-    "revision": "6925e1926e5b20cd73d771d95957cfd8"
+    "revision": "f158a3d03d44a7e23215ae7cc43ec1fe"
   },
   {
     "url": "operating-system/windows/auto-install/index.html",
-    "revision": "d0f196d14e53306ac0ea72bee04c5a79"
+    "revision": "c08ef500b6767bdcb4240cd5857869c6"
   },
   {
     "url": "operating-system/windows/index.html",
-    "revision": "56ba322b7cab13c7e0590068fb9075ae"
+    "revision": "2c59918aa13181e987d16e98c4ddc4f2"
   },
   {
     "url": "operating-system/windows/ip-port.html",
-    "revision": "5146eec3f302b69502cee96a8f632ba6"
+    "revision": "97a4e6dc2eac49300ed415cecbde1f4c"
   },
   {
     "url": "operating-system/windows/settings.html",
-    "revision": "bda010f1ef3aa6e9d03e799b01631e40"
+    "revision": "f935a9bd1d8d0879f983f31f6ba2ad50"
   },
   {
     "url": "operating-system/windows/WinServer2008r2-IIS.Administration.html",
-    "revision": "ea52b13feaf12cc2186d7c9c870b5448"
+    "revision": "c63d75461d339f08c2c55f41bfe92a4d"
   },
   {
     "url": "operating-system/windows/添加右键快捷方式.html",
-    "revision": "9e0a1aab77d746287f0362aeaec15990"
+    "revision": "f6481ae137eefafa5af08170945e7702"
   },
   {
     "url": "pay/index.html",
-    "revision": "85bb5bee9a60ab27916a2fa6b622f480"
+    "revision": "231ede472b148ebb54dd33159b9c3e0d"
   },
   {
     "url": "pay/WeChatPay.html",
-    "revision": "b16c0d65c685f0c2ac6548b027d67992"
+    "revision": "467aa87e49cda24c1e24d90ab367ee1d"
   },
   {
     "url": "programing-language/csharp/index.html",
-    "revision": "1be668e32b0c21ca93d143a76a8bb8e9"
+    "revision": "b23381d54ec7d9ba088f9d367304c8a0"
   },
   {
     "url": "programing-language/csharp/反射.html",
-    "revision": "76f3d620f9e5f9ab7bea7e16e3f044fb"
+    "revision": "b011a3307cd2b914d08a9cde10d6f472"
   },
   {
     "url": "programing-language/csharp/编程技巧.html",
-    "revision": "23e68ae877e51d7df57590b8c553ef30"
+    "revision": "977c0421e474ffbf1d39c14234bc780b"
   },
   {
     "url": "programing-language/csharp/静态构造函数.html",
-    "revision": "547a4931cef92401376594ca78af4092"
+    "revision": "6c805f6ec2cfdb59e8c41a78e3eacdde"
   },
   {
     "url": "programing-language/golang/index.html",
-    "revision": "c462f3214a2c0b45c998b446c82c9b7f"
+    "revision": "49bef9ebd1c3400d0d39d866b067bb79"
   },
   {
     "url": "programing-language/powershell/index.html",
-    "revision": "93bbd5cfa718abc3a5584c877b49125b"
+    "revision": "95096ef570e3062b3a323e138f945c0e"
   },
   {
     "url": "programing-language/powershell/入门.html",
-    "revision": "5d04cc8f0fb004c211888b8776388c81"
+    "revision": "e877b2643cdeb5c6550414dcd766e3d2"
   },
   {
     "url": "programing-language/powershell/初识powershell、nuget powershell 调试.html",
-    "revision": "03ec9ef1774557f12f5980a620158cfe"
+    "revision": "c08c2c181a483cb224afd57b6b802fa1"
   },
   {
     "url": "programing-language/powershell/功能.html",
-    "revision": "1b43cfa9a1082044cc19bca413392f69"
+    "revision": "dc83eb0b6c098eca9985e760c1f2ecaa"
   },
   {
     "url": "programing-language/powershell/问题.html",
-    "revision": "d171832d0bcae26e28b1b68b2a81ce54"
+    "revision": "04eae638cdee9f18eb9e82adc00c5b3e"
   },
   {
     "url": "scripts/t4/index.html",
-    "revision": "8f21512582a831ab9a601c4e3c132966"
+    "revision": "52a807f2026b57e6897758e24c396b6c"
   },
   {
     "url": "signalr/index.html",
-    "revision": "6d419e135b5dd4709bc488fd6a30aed3"
+    "revision": "0618364b113d1436de49dab13f8e457c"
   },
   {
     "url": "ssh/index.html",
-    "revision": "a3133e347e63b1feea07b5af23c745f6"
+    "revision": "7f732e921241feca32681a6ae74678bc"
   },
   {
     "url": "summary-and-planning/2017.html",
-    "revision": "3da46f61cf029c3ed2d9216bbf87dddf"
+    "revision": "1ceefb4319736e462045baef6ce8b6cd"
   },
   {
     "url": "summary-and-planning/2018.html",
-    "revision": "ba681eabb91fa432a0f1df8c2e51f1bd"
+    "revision": "9517c808f80aa92c559d8eaf1a531268"
   },
   {
     "url": "summary-and-planning/index.html",
-    "revision": "c61bdb7d76b9a9e8c85d6c461be7a8f7"
+    "revision": "ec133046b4ff5ff6cda9e492cb9401b7"
   },
   {
     "url": "tools/doc/docfx/index.html",
-    "revision": "d8934e3abf2812591c55f06bf7d885e6"
+    "revision": "e357897e78f09736860fa44bfb5649a8"
   },
   {
     "url": "tools/doc/vp/index.html",
-    "revision": "d20d46d2b7f7b9328501f80b1e2f8caf"
+    "revision": "04d2efc3beb098c81e9b061355ce972a"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
