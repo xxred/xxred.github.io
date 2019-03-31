@@ -9,8 +9,8 @@
 - 此教程以 IdentityServer4 的 [Ids4Admin](https://github.com/IdentityServer/IdentityServer4.Templates) 的`is4admin`模板为例
 - 首先安装模板`dotnet new -i identityserver4.templates`，然后新建项目`dotnet new is4admin`，运行项目`dotnet run`，访问[http://localhost:5000](http://localhost:5000)
 - 运行一次项目之后会得到 sqlite 数据库文件，到这里我们就有了源数据库
-  ![ ](imgs/2019-03-20-15-28-44.png)
-  ![ ](imgs/2019-03-20-15-29-40.png)
+  ![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/docs/newlifex/imgs/2019-03-20-15-28-44.png)
+  ![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/docs/newlifex/imgs/2019-03-20-15-29-40.png)
 
 ## 码神工具 XCoder 生成实体代码
 
@@ -24,14 +24,14 @@
 ### 配置连接
 
 - 打开`XCoder.exe.config`，添加数据库连接，码神工具内置了支持的数据库的连接写法，现在我们配置 sqlite 的连接，并把刚刚的`IdentityServer.db`复制到码神工具目录
-  ![ ](imgs/2019-03-20-15-33-13.png)
-  ![ ](imgs/2019-03-20-15-32-42.png)
+  ![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/docs/newlifex/imgs/2019-03-20-15-33-13.png)
+  ![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/docs/newlifex/imgs/2019-03-20-15-32-42.png)
 
 ### 导出模型文件
 
 - 打开码神工具，并依次打开工具-数据建模工具
 - 在连接处选择刚刚配置的连接 IdentityServer 并点击连接，导出模型，即可得到 xml 模型文件
-  ![ ](imgs/2019-03-20-15-43-45.png)
+  ![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/docs/newlifex/imgs/2019-03-20-15-43-45.png)
 
 ### 生成实体模型代码
 
@@ -43,7 +43,7 @@
 ```
 
 - 将刚导出的模型文件复制到与 tt 相同的目录，vs 中选中 tt 文件，选择右键运行自定义工具，稍等片刻，即可生成实体代码文件
-  ![ ](imgs/2019-03-20-16-59-21.png)
+  ![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/docs/newlifex/imgs/2019-03-20-16-59-21.png)
 
 ## 迁移过程（重点）
 
