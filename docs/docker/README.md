@@ -1,6 +1,6 @@
 # Docker 入门资料收集
 
-收集Docker入门可能用得到的资料，开发机系统为win10
+收集 Docker 入门可能用得到的资料，开发机系统为 win10
 
 ## 下载安装
 
@@ -8,9 +8,9 @@
 - https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe
 - [官方文档](https://docs.docker.com/docker-for-windows/install/)
 - [中文安装文档](https://docs.docker-cn.com/docker-for-windows/install/)
-- 如果装有[chocolatey](https://chocolatey.org/)，没有的话安装也很快[命令行安装](https://chocolatey.org/install/)，建议用powershell执行`choco install docker-desktop -y`安装Docker
+- 如果装有[chocolatey](https://chocolatey.org/)，没有的话安装也很快[命令行安装](https://chocolatey.org/install/)，建议用 powershell 执行`choco install docker-desktop -y`安装 Docker
 - 安装完需要重启完成完整安装
-- win10以下版本需要安装[Docker Toolbox](https://docs.docker.com/toolbox/overview/)
+- win10 以下版本需要安装[Docker Toolbox](https://docs.docker.com/toolbox/overview/)
 
 ```powershell
 PS C:\WINDOWS\system32> choco install docker-desktop -y
@@ -41,9 +41,13 @@ Chocolatey installed 1/1 packages.
  See the log for details (H:\Program Files\Chocolatey\logs\chocolatey.log).
 ```
 
+## ubuntu16 以上版本安装
+
+- `sudo snap install docker`或者`sudo apt install docker.io`
+
 ## 运行
 
-- 运行hello-world，执行`docker run hello-world`
+- 运行 hello-world，执行`docker run hello-world`
 - 安装更多可参考http://www.runoob.com/docker/docker-install-mysql.html
 
 ```powershell
@@ -89,31 +93,31 @@ PS C:\Users\12504>
 ### 名词解释
 
 - http://www.runoob.com/docker/docker-architecture.html
-- 一句话概括：在Docker主机(Host，物理机)上通过Docker Machine命令行工具安装Docker 客户端(Client)，然后从Docker 仓库(Registry，官方Docker Hub)拉取Docker 镜像(Images，相当于软件包)运行，运行的东西叫做Docker 容器(Container，独立运行的应用)。
+- 一句话概括：在 Docker 主机(Host，物理机)上通过 Docker Machine 命令行工具安装 Docker 客户端(Client)，然后从 Docker 仓库(Registry，官方 Docker Hub)拉取 Docker 镜像(Images，相当于软件包)运行，运行的东西叫做 Docker 容器(Container，独立运行的应用)。
 
-### Docker官方英文资源
+### Docker 官方英文资源
 
-- docker官网：http://www.docker.com
-- Docker windows入门：https://docs.docker.com/windows/
+- docker 官网：http://www.docker.com
+- Docker windows 入门：https://docs.docker.com/windows/
 - Docker Linux 入门：https://docs.docker.com/linux/
 - Docker mac 入门：https://docs.docker.com/mac/
 - Docker 用户指引：https://docs.docker.com/engine/userguide/
 - Docker 官方博客：http://blog.docker.com/
 - Docker Hub: https://hub.docker.com/
-- Docker开源： https://www.docker.com/open-source
+- Docker 开源： https://www.docker.com/open-source
 
-### Docker中文资源
+### Docker 中文资源
 
-- docker-cn.com为官方网站翻译
+- docker-cn.com 为官方网站翻译
 
-- Docker中文网站：https://www.docker-cn.com/
-- Docker安装手册：https://docs.docker-cn.com/engine/installation/
-- Docker中文网站：http://www.docker.org.cn
-- Docker入门教程: http://www.docker.org.cn/book/docker.html
-- Docker安装手册：http://www.docker.org.cn/book/install.html
-- 一小时Docker教程 ：https://blog.csphere.cn/archives/22
-- docker从入门到实践：- http://dockerpool.com/static/books/docker_practice/index.html
-- Docker纸质书：http://www.docker.org.cn/dockershuji.html
+- Docker 中文网站：https://www.docker-cn.com/
+- Docker 安装手册：https://docs.docker-cn.com/engine/installation/
+- Docker 中文网站：http://www.docker.org.cn
+- Docker 入门教程: http://www.docker.org.cn/book/docker.html
+- Docker 安装手册：http://www.docker.org.cn/book/install.html
+- 一小时 Docker 教程 ：https://blog.csphere.cn/archives/22
+- docker 从入门到实践：- http://dockerpool.com/static/books/docker_practice/index.html
+- Docker 纸质书：http://www.docker.org.cn/dockershuji.html
 - DockerPPT：http://www.docker.org.cn/dockerppt.html
 - 推荐入门教程：http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html
 
@@ -122,7 +126,7 @@ PS C:\Users\12504>
 - Docker 中国官方镜像加速 https://www.docker-cn.com/registry-mirror
 - 网易加速器：http://hub-mirror.c.163.com
 - 官方中国加速器：https://registry.docker-cn.com
-- ustc的镜像：https://docker.mirrors.ustc.edu.cn
+- ustc 的镜像：https://docker.mirrors.ustc.edu.cn
 - daocloud（注册后使用）：https://www.daocloud.io/mirror#accelerator-doc
 
 ### 命令大全
@@ -148,7 +152,7 @@ PS C:\Users\12504>
     - wait
     - export
     - port
-  - 容器rootfs命令
+  - 容器 rootfs 命令
     - commit
     - cp
     - diff
@@ -172,9 +176,9 @@ PS C:\Users\12504>
 
 ### 界面管理
 
-- 可视化Docker管理，支持多主机[Portainer](https://www.portainer.io/installation/)
+- 可视化 Docker 管理，支持多主机[Portainer](https://www.portainer.io/installation/)
 - 开源的企业级容器管理平台[rancher](https://rancher.com/)
 
 ## 总结
 
-- 经过动手实践，才会更深一层理解Docker，知道它能干什么，可以解决什么问题，如果没有配置环境的烦恼，请速速离开，因为学习成本将会让人从未入门到放弃。
+- 经过动手实践，才会更深一层理解 Docker，知道它能干什么，可以解决什么问题，如果没有配置环境的烦恼，请速速离开，因为学习成本将会让人从未入门到放弃。

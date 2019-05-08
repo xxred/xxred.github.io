@@ -60,18 +60,18 @@ docker run --volumes-from rancher-data-\<DATE> -v \$PWD:/backup alpine tar zcvf 
 \<DATE>替换为日期 2019-03-14
 \<RANCHER_VERSION>替换 rancher 版本为 v2.1.7
 
-## 1.创建数据卷
+### 1.创建数据卷
 
 docker run --volumes-from rancher-data-2019-03-14 -v \$PWD:/backup alpine tar zcvf /backup/rancher-data-backup-v2.1.7-2019-03-14.tar.gz /var/lib/rancher
 
-## 2.停止容器
+### 2.停止容器
 
 docker ps 可看到容器列表，查看镜像名为 rancher 的一项找到名称
 docker stop \<RANCHER_CONTAINER_NAME>
 \<RANCHER_CONTAINER_NAME>替换为容器名
 docker stop rancher
 
-## 3.创建数据容器
+### 3.创建数据容器
 
 docker create --volumes-from \<RANCHER_CONTAINER_NAME> --name rancher-data-\<DATE> rancher/rancher:\<RANCHER_CONTAINER_TAG>
 
@@ -81,7 +81,7 @@ docker create --volumes-from \<RANCHER_CONTAINER_NAME> --name rancher-data-\<DAT
 
 docker create --volumes-from rancher --name rancher-data-2019-03-14 rancher/rancher
 
-## 4.创建一个备份 tarball
+### 4.创建一个备份 tarball
 
 docker run --volumes-from rancher-data-\<DATE> -v \$PWD:/backup:z alpine tar zcvf /backup/rancher-data-backup-\<RANCHER_VERSION>-\<DATE>.tar.gz /var/lib/rancher
 
@@ -90,21 +90,21 @@ docker run --volumes-from rancher-data-\<DATE> -v \$PWD:/backup:z alpine tar zcv
 
 docker run --volumes-from rancher-data-2019-03-14 -v \$PWD:/backup:z alpine tar zcvf /backup/rancher-data-backup-v2.1.7-2019-03-14.tar.gz /var/lib/rancher
 
-## 5.运行结果
+### 5.运行结果
 
 输入 ls 命令查看文件，可以看到名字类似于 rancher-data-backup-\<RANCHER_VERSION>-\<DATE>.tar.gz 的文件
 
-## 6.保存备份
+### 6.保存备份
 
 将备份 tarball 移动到 Rancher Server 外部的安全位置。然后把 rancher-data-\<DATE>容器删除
 
 docker rm rancher-data-2019-03-14
 
-## 7.启动 rancher
+### 7.启动 rancher
 
 docker start rancher
 
-## 恢复
+### 恢复
 
 docker run --volumes-from <RANCHER_CONTAINER_NAME> -v \$PWD:/backup \
 alpine sh -c "rm /var/lib/rancher/\* -rf && \
@@ -113,6 +113,10 @@ tar zxvf /backup/rancher-data-backup-\<RANCHER_VERSION>-<DATE>.tar.gz"
 docker run --volumes-from rancher -v \$PWD:/backup \\
 alpine sh -c "rm /var/lib/rancher/\* -rf && \\
 tar zxvf /backup/rancher-data-backup-v2.1.7-2019-03-14.tar.gz"
+
+## 卸载清理
+
+https://blog.csdn.net/csdn_duomaomao/article/details/77684571
 
 ## 总结
 
