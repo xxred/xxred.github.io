@@ -1,4 +1,4 @@
-Write-Host "********************generate sidebar start!***********************"
+﻿Write-Host "********************generate sidebar start!***********************"
 
 <#
 vuepress 生成侧边栏json，需要配置输入输出
@@ -28,11 +28,11 @@ $tocContent = @("") # 记录输出内容，数组形式
 $lastRPath = "" # 记录上一次文件夹信息，用来判断当前md文件是否与上个文件处于同一文件夹
 $indentation = "" # 缩进
 
-$fileInfos | ForEach-Object{
+$fileInfos | ForEach-Object {
 
     $fileInfo = $_
     # 获取当前文件所在文件夹，将反斜杠换成正斜杠
-    $rPath = $fileInfo.DirectoryName.Replace($buildPath, "\").Replace("\","/")+"/"
+    $rPath = $fileInfo.DirectoryName.Replace($buildPath, "\").Replace("\", "/") + "/"
 
     # 判断当前文件夹是否与上次记录的文件夹相同，不相同则新建一组
     if (!($rPath -eq $lastRPath )) {
@@ -41,13 +41,13 @@ $fileInfos | ForEach-Object{
         if (!($lastRPath -eq "")) {
             $lastIndex = $tocContent.Length - 1
             # 去掉children的最后一个逗号
-            $tocContent[$lastIndex] = $tocContent[$lastIndex].Replace('",','"')
+            $tocContent[$lastIndex] = $tocContent[$lastIndex].Replace('",', '"')
             # 补全中括号和括号
-            $tocContent =  $tocContent + ($indentation + '        ]') + ($indentation + '    }],')
+            $tocContent = $tocContent + ($indentation + '        ]') + ($indentation + '    }],')
         }
 
         # 输出title和children
-        $tocContent =  $tocContent + ($indentation + '    "' + $rPath + '": [{') + ($indentation + '        "title": "' + $fileInfo.Directory.Name + '",') + ($indentation + '        "children": [')
+        $tocContent = $tocContent + ($indentation + '    "' + $rPath + '": [{') + ($indentation + '        "title": "' + $fileInfo.Directory.Name + '",') + ($indentation + '        "children": [')
         # 输出""，表示readme.md也作为侧边栏菜单
         $tocContent = $tocContent + ($indentation + '            "",')
         # 记录父级
@@ -55,17 +55,17 @@ $fileInfos | ForEach-Object{
     }
 
     # 文件名
-    $tocContent = $tocContent + ($indentation + '            "'+$fileInfo.Name+'",')
+    $tocContent = $tocContent + ($indentation + '            "' + $fileInfo.Name + '",')
 }
 
 # 去掉children的最后一个逗号
 $lastIndex = $tocContent.Length - 1
-$tocContent[$lastIndex] = $tocContent[$lastIndex].Replace('",','"')
+$tocContent[$lastIndex] = $tocContent[$lastIndex].Replace('",', '"')
 
 # 补全中括号和括号
-$tocContent =  $tocContent + ($indentation + '        ]') + ($indentation + '    }]')
+$tocContent = $tocContent + ($indentation + '        ]') + ($indentation + '    }]')
 $tocContent[0] = $indentation + '{'
-$tocContent  = $tocContent + ($indentation + '}')
+$tocContent = $tocContent + ($indentation + '}')
 
 # 输出到文件
 $tocContent | Out-File -FilePath $output -Encoding "utf8"

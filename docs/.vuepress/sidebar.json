@@ -13,6 +13,13 @@
             "schema.md"
         ]
     }],
+    "/db/mysql/": [{
+        "title": "mysql",
+        "children": [
+            "",
+            "config.md"
+        ]
+    }],
     "/desktop-app-dev-with-html/": [{
         "title": "desktop-app-dev-with-html",
         "children": [
@@ -27,6 +34,8 @@
             "LibManager.md",
             "MSBuildTasks.md",
             "MsBuild属性元数据.md",
+            "nuget-build-on-azuredevops.md",
+            "nuget-local-source.md",
             "nuget.md",
             "多平台项目合并成单项目.md",
             "折叠代码.md",
@@ -55,6 +64,9 @@
         "title": "docker",
         "children": [
             "",
+            "docker实用命令.md",
+            "nginx-on-docker.md",
+            "rancher.md",
             "wsl-docker.md"
         ]
     }],
@@ -64,7 +76,10 @@
             "",
             "asp.net core移植.md",
             "health-checks.md",
+            "newlife-identityserver4-in-aspnetcore.md",
+            "persistence-identity-server-4-with-newLife-xcode.md",
             "razor-page-library.md",
+            "release.md",
             "中间件.md",
             "坑坑更健康.md",
             "搭建基于Asp.NetCore-Vue的SPA项目.md",
@@ -124,6 +139,7 @@
         "title": "newlifex",
         "children": [
             "",
+            "NewLife.XCode-Migration.md",
             "Redis100亿小数据.md"
         ]
     }],
@@ -131,7 +147,7 @@
         "title": "linux",
         "children": [
             "",
-            "linux上常用命令.md",
+            "snap.md",
             "通用常用命令.md"
         ]
     }],
