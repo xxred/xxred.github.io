@@ -4,6 +4,6 @@
     "dev": "powershell  Set-ExecutionPolicy -ExecutionPolicy BYPASS -Scope Process ; powershell ./build/build-sidebar.ps1 && vuepress dev docs"
   },
   "devDependencies": {
-    "vuepress": "^0.14.8"
+    "vuepress": "^1.0.0"
   }
 }
