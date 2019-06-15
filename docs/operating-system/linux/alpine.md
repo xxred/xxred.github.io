@@ -101,6 +101,13 @@ localhost:/etc/docker# service docker start
 
 - 所以整个问题的根源是`cgroup filesystem`没有挂载，在执行`rc-update add docker boot`后在启动就好了
 
+## 其他使用
+
+### 执行脚本
+
+- sh执行/bin/busybox，执行脚本不支持括号方式的数组，因此需要bash，其他解决办法暂不知晓
+- 执行查看`ls -l /bin/*sh`，没有bash的话，执行`apk add bash`安装
+
 ## 总结
 
 - 多次总结，使用一款产品，第一件事就是找到文档，文档实在晦涩难懂的情况，那么可能有翻译版或者国内版，毕竟官方的才是最权威的
