@@ -116,6 +116,7 @@ tar zxvf /backup/rancher-data-backup-v2.1.7-2019-03-14.tar.gz"
 
 ## 卸载清理
 
+https://www.cnrancher.com/docs/rancher/v2.x/cn/install-prepare/remove-node/
 https://blog.csdn.net/csdn_duomaomao/article/details/77684571
 
 ## 总结
