@@ -37,6 +37,7 @@
             "nuget-build-on-azuredevops.md",
             "nuget-local-source.md",
             "nuget.md",
+            "vsx.md",
             "多平台项目合并成单项目.md",
             "折叠代码.md",
             "调试.md",
@@ -147,6 +148,7 @@
         "title": "linux",
         "children": [
             "",
+            "alpine.md",
             "snap.md",
             "通用常用命令.md"
         ]
