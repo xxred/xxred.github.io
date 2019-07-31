@@ -11,6 +11,8 @@
 
 - win10 1803 版本自带并启用
 - 开启步骤：设置-应用-应用和功能-管理可选的功能-添加功能-OpenSSH 客户端
+- 安装包下载 http://www.mls-software.com/opensshd.html
+- 源码库 https://github.com/PowerShell/openssh-portable
 
 ## 删除 ssh 中旧的 RSA key
 
