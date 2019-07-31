@@ -85,6 +85,10 @@ PasswordAuthentication yes # 设置是否使用口令验证
 AuthorizedKeysFile .ssh/authorized_keys #指定授权文件
 ```
 
+## 调试
+
+- `ssh -vvv host`
+
 ## 总结
 
 - 一开始急于实现功能，没有仔细探究原理，找了很多使用公钥免密登陆教程，其中最大的问题竟然是私钥文件不是默认命名，登陆也没有指定私钥文件，不懂原理真的很吃亏
