@@ -6,6 +6,21 @@
             "字符编码.md"
         ]
     }],
+    "/ci-cd/gitlab-runner/": [{
+        "title": "gitlab-runner",
+        "children": [
+            "",
+            "executor-docker.md",
+            "gitlab-runner.md"
+        ]
+    }],
+    "/ci-cd/": [{
+        "title": "ci-cd",
+        "children": [
+            "",
+            "rancher+gitlab+appveyor实现CI-CD流水线.md"
+        ]
+    }],
     "/data-type/xml/": [{
         "title": "xml",
         "children": [
@@ -25,6 +40,13 @@
         "children": [
             "",
             "vuido.md"
+        ]
+    }],
+    "/dev-tool/visualstudio/nuget/": [{
+        "title": "nuget",
+        "children": [
+            "",
+            "nuget-cross-platform-authentication.md"
         ]
     }],
     "/dev-tool/visualstudio/": [{
@@ -59,6 +81,20 @@
             "同步设置.md",
             "插件.md",
             "设置.md"
+        ]
+    }],
+    "/docker/images/": [{
+        "title": "images",
+        "children": [
+            "",
+            "appveyor.md"
+        ]
+    }],
+    "/docker/k8s/": [{
+        "title": "k8s",
+        "children": [
+            "",
+            "microk8s.md"
         ]
     }],
     "/docker/": [{
@@ -98,6 +134,13 @@
             "版本问题.md"
         ]
     }],
+    "/dotnet-core/msbuild-task/": [{
+        "title": "msbuild-task",
+        "children": [
+            "",
+            "generate-runtime-configuration-files.md"
+        ]
+    }],
     "/feelings/": [{
         "title": "feelings",
         "children": [
@@ -134,6 +177,13 @@
         "children": [
             "",
             "各种异常.md"
+        ]
+    }],
+    "/git/": [{
+        "title": "git",
+        "children": [
+            "",
+            "gitlab.md"
         ]
     }],
     "/newlifex/": [{
@@ -194,7 +244,8 @@
         "children": [
             "",
             "2017.md",
-            "2018.md"
+            "2018.md",
+            "2019-8.md"
         ]
     }]
 }
