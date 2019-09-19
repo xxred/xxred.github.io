@@ -105,8 +105,12 @@ localhost:/etc/docker# service docker start
 
 ### 执行脚本
 
-- sh执行/bin/busybox，执行脚本不支持括号方式的数组，因此需要bash，其他解决办法暂不知晓
-- 执行查看`ls -l /bin/*sh`，没有bash的话，执行`apk add bash`安装
+- sh 执行/bin/busybox，执行脚本不支持括号方式的数组，因此需要 bash，其他解决办法暂不知晓
+- 执行查看`ls -l /bin/*sh`，没有 bash 的话，执行`apk add bash`安装
+
+### 替换镜像
+
+- 在终端输入以下命令以替换 TUNA 镜像源： `sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories`
 
 ## 总结
 
