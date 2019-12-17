@@ -11,6 +11,7 @@
         "children": [
             "",
             "executor-docker.md",
+            "gitlab-runner+k8s实现自动部署.md",
             "gitlab-runner.md"
         ]
     }],
@@ -32,7 +33,15 @@
         "title": "mysql",
         "children": [
             "",
-            "config.md"
+            "config.md",
+            "故障解决.md"
+        ]
+    }],
+    "/desktop-app-dev/": [{
+        "title": "desktop-app-dev",
+        "children": [
+            "",
+            "GTK#初级篇.md"
         ]
     }],
     "/desktop-app-dev-with-html/": [{
@@ -63,6 +72,7 @@
             "多平台项目合并成单项目.md",
             "折叠代码.md",
             "调试.md",
+            "调试dotnetcore3.0.md",
             "项目报错.md"
         ]
     }],
@@ -90,13 +100,6 @@
             "appveyor.md"
         ]
     }],
-    "/docker/k8s/": [{
-        "title": "k8s",
-        "children": [
-            "",
-            "microk8s.md"
-        ]
-    }],
     "/docker/": [{
         "title": "docker",
         "children": [
@@ -111,8 +114,10 @@
         "title": "aspnetcore",
         "children": [
             "",
+            "asp.net core2.2迁移到asp.net core3.0.md",
             "asp.net core移植.md",
             "health-checks.md",
+            "model-convention.md",
             "newlife-identityserver4-in-aspnetcore.md",
             "persistence-identity-server-4-with-newLife-xcode.md",
             "razor-page-library.md",
@@ -141,6 +146,14 @@
             "generate-runtime-configuration-files.md"
         ]
     }],
+    "/easy-admin/": [{
+        "title": "easy-admin",
+        "children": [
+            "",
+            "功能介绍.md",
+            "权限管理.md"
+        ]
+    }],
     "/feelings/": [{
         "title": "feelings",
         "children": [
@@ -162,6 +175,7 @@
             "",
             "error-exception.md",
             "router.md",
+            "vue动态路由、动态加载组件、动态加载组件.md",
             "vue项目从零搭建.md"
         ]
     }],
@@ -186,12 +200,33 @@
             "gitlab.md"
         ]
     }],
+    "/k8s/": [{
+        "title": "k8s",
+        "children": [
+            "",
+            "microk8s.md"
+        ]
+    }],
+    "/net/": [{
+        "title": "net",
+        "children": [
+            "",
+            "udp.md"
+        ]
+    }],
     "/newlifex/": [{
         "title": "newlifex",
         "children": [
             "",
             "NewLife.XCode-Migration.md",
             "Redis100亿小数据.md"
+        ]
+    }],
+    "/oauth2/": [{
+        "title": "oauth2",
+        "children": [
+            "",
+            "identity-server.md"
         ]
     }],
     "/operating-system/linux/": [{
@@ -237,6 +272,13 @@
             "初识powershell、nuget powershell 调试.md",
             "功能.md",
             "问题.md"
+        ]
+    }],
+    "/raspberry-pi/": [{
+        "title": "raspberry-pi",
+        "children": [
+            "",
+            "camera.md"
         ]
     }],
     "/summary-and-planning/": [{
