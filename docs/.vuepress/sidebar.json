@@ -175,6 +175,7 @@
             "",
             "error-exception.md",
             "router.md",
+            "vscode-vue-ext.md",
             "vue动态路由、动态加载组件、动态加载组件.md",
             "vue项目从零搭建.md"
         ]

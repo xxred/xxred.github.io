@@ -55,9 +55,9 @@ sudo docker run -d --restart=unless-stopped --name rancher -p 8080:80 -p 8443:44
 
 - 命令说明，通过`docker ps -a`查看所有容器，得到版本等相关信息
 
-docker run --volumes-from rancher-data-\<DATE> -v \$PWD:/backup alpine tar zcvf /backup/rancher-data-backup-\<RANCHER_VERSION>-\<DATE>.tar.gz /var/lib/rancher
+docker run --volumes-from rancher-data-&lt;DATE&gt; -v \$PWD:/backup alpine tar zcvf /backup/rancher-data-backup-\<RANCHER_VERSION>-\&lt;DATE&gt;.tar.gz /var/lib/rancher
 
-\<DATE>替换为日期 2019-03-14
+\&lt;DATE&gt;替换为日期 2019-03-14
 \<RANCHER_VERSION>替换 rancher 版本为 v2.1.7
 
 ### 1.创建数据卷
@@ -73,30 +73,30 @@ docker stop rancher
 
 ### 3.创建数据容器
 
-docker create --volumes-from \<RANCHER_CONTAINER_NAME> --name rancher-data-\<DATE> rancher/rancher:\<RANCHER_CONTAINER_TAG>
+docker create --volumes-from \<RANCHER_CONTAINER_NAME> --name rancher-data-\&lt;DATE&gt; rancher/rancher:\<RANCHER_CONTAINER_TAG>
 
 \<RANCHER_CONTAINER_NAME>替换为容器名 rancher
-\<DATE>替换为日期 2019-03-14
+\&lt;DATE&gt;替换为日期 2019-03-14
 \<RANCHER_CONTAINER_TAG>替换为镜像名后面的 tag 标签，没有则不填，连同冒号删掉
 
 docker create --volumes-from rancher --name rancher-data-2019-03-14 rancher/rancher
 
 ### 4.创建一个备份 tarball
 
-docker run --volumes-from rancher-data-\<DATE> -v \$PWD:/backup:z alpine tar zcvf /backup/rancher-data-backup-\<RANCHER_VERSION>-\<DATE>.tar.gz /var/lib/rancher
+docker run --volumes-from rancher-data-\&lt;DATE&gt; -v \$PWD:/backup:z alpine tar zcvf /backup/rancher-data-backup-\<RANCHER_VERSION>-\&lt;DATE&gt;.tar.gz /var/lib/rancher
 
-\<DATE>替换为日期 2019-03-14
+\&lt;DATE&gt;替换为日期 2019-03-14
 \<RANCHER_VERSION>替换为 rancher 版本 v2.1.7
 
 docker run --volumes-from rancher-data-2019-03-14 -v \$PWD:/backup:z alpine tar zcvf /backup/rancher-data-backup-v2.1.7-2019-03-14.tar.gz /var/lib/rancher
 
 ### 5.运行结果
 
-输入 ls 命令查看文件，可以看到名字类似于 rancher-data-backup-\<RANCHER_VERSION>-\<DATE>.tar.gz 的文件
+输入 ls 命令查看文件，可以看到名字类似于 rancher-data-backup-\<RANCHER_VERSION>-\&lt;DATE&gt;.tar.gz 的文件
 
 ### 6.保存备份
 
-将备份 tarball 移动到 Rancher Server 外部的安全位置。然后把 rancher-data-\<DATE>容器删除
+将备份 tarball 移动到 Rancher Server 外部的安全位置。然后把 rancher-data-\&lt;DATE&gt;容器删除
 
 docker rm rancher-data-2019-03-14
 
@@ -108,7 +108,7 @@ docker start rancher
 
 docker run --volumes-from <RANCHER_CONTAINER_NAME> -v \$PWD:/backup \
 alpine sh -c "rm /var/lib/rancher/\* -rf && \
-tar zxvf /backup/rancher-data-backup-\<RANCHER_VERSION>-<DATE>.tar.gz"
+tar zxvf /backup/rancher-data-backup-\<RANCHER_VERSION>-&lt;DATE&gt;.tar.gz"
 
 docker run --volumes-from rancher -v \$PWD:/backup \\
 alpine sh -c "rm /var/lib/rancher/\* -rf && \\
