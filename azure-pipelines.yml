@@ -21,6 +21,7 @@ steps:
       displayName: '配置git信息'
     - powershell: | 
         git clone https://github.com/xxred/xxred.github.io.git -b gh-pages origin_site -q
+        # 若不进行信息配置，也可改为 git clone https://$(github-token)@github.com/xxred/xxred.github.io.git -b gh-pages origin_site -q
         rm origin_site/* -recurse
         Copy-Item origin_site/.git vuepress -recurse
       displayName: '下载gh-pages'
