@@ -135,6 +135,16 @@
             "路由.md"
         ]
     }],
+    "/dotnet-core/blazor/": [{
+        "title": "blazor",
+        "children": [
+            "",
+            "call-javascript-from-dotnet.md",
+            "READMD.md",
+            "state-management.md",
+            "templated-components.md"
+        ]
+    }],
     "/dotnet-core/DotNetCore/": [{
         "title": "DotNetCore",
         "children": [
@@ -174,6 +184,13 @@
             "",
             "注意事项和技巧.md",
             "高级组件.md"
+        ]
+    }],
+    "/front-end/mobile/": [{
+        "title": "mobile",
+        "children": [
+            "",
+            "camera.md"
         ]
     }],
     "/front-end/vuejs/": [{
