@@ -19,6 +19,6 @@ features:
         <span> | Theme - </span><a href="https://www.vuepress.cn/" target="_blank">default-theme</a>
     </div>
     <div>
-        <a href="http://www.miitbeian.gov.cn" target="_blank">桂ICP备17000585号</a>
+        <a href="http://beian.miit.gov.cn" target="_blank">桂ICP备17000585号-2</a>
     </div>
 </div>
