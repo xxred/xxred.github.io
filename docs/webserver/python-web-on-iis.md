@@ -92,3 +92,4 @@ C:\Windows\system32\inetsrv\appcmd unlock config -section:system.webServer/handl
 
 - 一开始将带有空格的路径设置为 python 路径就有坑了，尝试了多次，找了好多篇文章，才发现有一篇文章有截图，python 后面的参数是带双引号的，即`c:\program files\python\python.exe|"c:\program files\python\lib\site-packages\wfastcgi.py"`。然后在网站的处理程序映射中找到`FlaskFastCGI`，编辑加上双引号，点击确定的时候会提示是否创建 FastCGI 应用程序，点击是即可。然后在 iis 主页中 FastCGI 设置，删除最早的那个，只保留最后创建的那个即可。
 - 最后整理测试，才发现最根本的问题，并且发现了权限的问题。
+- 参考 https://segmentfault.com/a/1190000008909201
