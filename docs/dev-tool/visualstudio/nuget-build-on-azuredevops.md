@@ -16,51 +16,51 @@
 
 - 创建组织，创建项目，自行完成，最后面来到下面位置
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-17-27-45.png)
+![ ](http://cdn.hebinghong.com/img/20200628093045.png)
 
 ## 创建构建流水线
 
 - 点击 Pipelines，然后再点击 New pipeline
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-17-30-08.png)
+![ ](http://cdn.hebinghong.com/img/20200628093705.png)
 
 - 选择 Github
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-17-46-04.png)
+![ ](http://cdn.hebinghong.com/img/20200628094002.png)
 
 - 选择仓库，由于项目在组织，所以要特别设置。拉到最底下，选择连接。个人项目直接选择即可
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-17-49-43.png)
+![ ](http://cdn.hebinghong.com/img/20200628094623.png)
 
 - 选择已经存在的连接
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-17-51-59.png)
+![ ](http://cdn.hebinghong.com/img/20200628094723.png)
 
 - 如果没有的话，点击下面的连接，到 Github 插件市场安装一个，选择一个组织，按提示操作即可
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-17-53-37.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-17-53-37.png)
 
 - 回到上一步选择的连接，之后选择仓库
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-18-00-32.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-18-00-32.png)
 
 - 选择推荐的模板
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-18-02-38.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-18-02-38.png)
 
 - 配置流水线，稍微修改一下[Microsoft-hosted agents](https://docs.microsoft.com/zh-cn/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml)，以及执行的命令
 - 如果是 build 比较复杂的或者其他语言，可能还需要其他工具，参考[pipelines](https://docs.microsoft.com/zh-cn/azure/devops/pipelines/languages/dotnet-core?view=azure-devops)的文档，或者参考这个[node 的项目](https://github.com/xxred/xxred.github.io/blob/master/azure-pipelines.yml)，生成 html 文件并自动提交代码
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-18-10-25.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-18-10-25.png)
 
 - 保存提交，自动添加一个`azure-pipelines.yml`文件到项目。保存之后，项目自动生成`Webhooks`，一有提交，就会通知 azure devops 开始执行 build 流水线
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-18-16-32.png)
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-18-24-29.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-18-16-32.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-18-24-29.png)
 
 - 运行结果
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-20-08-57.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-20-08-57.png)
 
 ## 创建发布流水线
 
@@ -69,91 +69,92 @@
 
 - 还是新建流水线开始，点击 New pipelines，只不过这回是 release 流水线
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-18-37-33.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-18-37-33.png)
 
 - 没有合适的作业，因此选择一个空的
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-18-40-26.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-18-40-26.png)
 
 - 修改步骤名，所有的步骤连在一起构成一个流水线，比如测试、打包、发布。每个步骤又可以有很多个任务。这里只需要一个就好啦
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-18-41-35.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-18-41-35.png)
 
 - 点击链接，编辑步骤
-  ![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-18-46-53.png)
+
+![ ](http://cdn.hebinghong.com/img/2019-03-31-18-46-53.png)
 
 - 选择作业运行的代理环境，这里选择有 vs2017 的环境
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-18-50-28.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-18-50-28.png)
 
 - 添加任务，并编辑，修改为 pack 的配置，在这一步就打包成 Nuget 包，打包自动 build
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-18-51-36.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-18-51-36.png)
 
 - 修改为 pack，指定打包的项目，包版本设置以日期命名的格式。注意不要勾选`Do not build`，除非上一步设置为 build
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-18-55-39.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-18-55-39.png)
 
 - 添加 Nuget 任务
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-18-57-36.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-18-57-36.png)
 
 - 编辑 Nuget 任务为 push，添加自定义 Nuget Server
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-19-00-03.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-19-00-03.png)
 
 - 这里使用 [myget](https://www.myget.org) 作为测试服务，当然发布到 nuget.org 也是没问题的，都是需要 Feed URL 和 ApiKey。申请之后正确填写即可
-  ![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-19-03-37.png)
-  ![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-19-05-40.png)
+  ![ ](http://cdn.hebinghong.com/img/20200628100201.png)
+  ![ ](http://cdn.hebinghong.com/img/2019-03-31-19-05-40.png)
 
 - 保存。完成这一切之后，别忘了最重要的事情，是不是全程没有按过保存按钮
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-19-07-52.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-19-07-52.png)
 
 - 添加需要发布的源，
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-19-24-28.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-19-24-28.png)
 
 - [创建 token](https://github.com/settings/tokens/new)，权限设置为读取和读写 hook
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-19-41-09.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-19-41-09.png)
 
 - 填写 token
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-19-35-39.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-19-35-39.png)
 
 - 选择目标仓库
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-19-39-47.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-19-39-47.png)
 
 - 设置 dev 分支
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-19-43-57.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-19-43-57.png)
 
 - 测试发布
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-19-08-40.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-19-08-40.png)
 
 - 创建发布，选择某次提交来发布
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-19-46-31.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-19-46-31.png)
 
 - 填写发布信息和标签
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-19-17-13.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-19-17-13.png)
 
 - 点击发布，正常创建发布之后会自动添加发布队列，自动运行，设置触发器之后自动运行
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-19-19-06.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-19-19-06.png)
 
 - 设置触发器，[文档](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/triggers?view=azure-devops&viewFallbackFrom=vsts)，以后每次有 push 操作，会自动执行发布
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-19-53-14.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-19-53-14.png)
 
 - 看下结果，可以看到发布成功了， 至于分支是 master，是因为刚才更新到 master 分支。myget 上也出现了发布的版本，将源`https://www.myget.org/F/newlife/api/v3/index.json`添加的 VS 的 Nuget 包源即可下载安装，包地址[https://www.myget.org/feed/newlife/package/nuget/NewLife.XCode](https://www.myget.org/feed/newlife/package/nuget/NewLife.XCode)
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-20-14-09.png)
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-20-17-36.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-20-14-09.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-31-20-17-36.png)
 
 ## 总结
 

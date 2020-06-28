@@ -32,20 +32,25 @@ sudo docker run -d --restart=unless-stopped --name rancher -p 8080:80 -p 8443:44
 
 - 注意服务器地址，如果使用了其他端口，要加端口，这里由于是重新修改的端口，改成 8080 了，但是图中配置还是默认 80 端口
 
-![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-14-16-19-29.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-14-16-19-29.png)
 
 ## 部署服务
 
 - 集群创建完成，部署服务，仅是在 ui 界面简单配置一下即可，并且该服务还有重新部署、部署备份、回滚等功能。就是这么强大方便
-  ![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-31-23-35-23.png)
+
+![ ](http://cdn.hebinghong.com/img/2019-03-31-23-35-23.png)
 
 ## 出现的问题
 
 - 添加 ingress 后，一直初始化失败，经过排查，就是上述说的端口占用问题，如图
-  ![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-14-14-47-07.png)
+
+![ ](http://cdn.hebinghong.com/img/2019-03-14-14-47-07.png)
+
 - 点击到 system 选项进去查看，可以看到 nginx-ingress 服务用的就是 80 和 443 端口，所以才会一直是初始化状态
-  ![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-14-14-49-08.png)
-  ![ ](https://raw.githubusercontent.com/xxred/xxred.github.io/master/imgs/2019-03-14-14-49-39.png)
+
+![ ](http://cdn.hebinghong.com/img/2019-03-14-14-49-08.png)
+![ ](http://cdn.hebinghong.com/img/2019-03-14-14-49-39.png)
+
 - 相关 issues https://github.com/rancher/rancher/issues/16172
 
 ## 备份
