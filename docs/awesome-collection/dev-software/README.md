@@ -18,7 +18,7 @@ export default {
           let url = 'https://api.github.com/repos/git-for-windows/git/releases/latest'
           axios.get(url).then(res=>{
               let data = res.data
-              let ver = data.tag_name.replace('v','Git-').replace('.windows','')
+              let ver = data.tag_name.replace('v','Git-').replace(/\.windows(\.\d)?/,'')
               let fileName = ver + '-64-bit.exe'
               let downloadUrl = `https://npm.taobao.org/mirrors/git-for-windows/${data.tag_name}/${fileName}`
               console.log(downloadUrl)
@@ -26,7 +26,9 @@ export default {
             })
       },
       download(url){
-          document.location = url
+          let aLink = document.createElement('a');
+          aLink.href = url;
+          aLink.click();
       }
   },
   mounted () {
