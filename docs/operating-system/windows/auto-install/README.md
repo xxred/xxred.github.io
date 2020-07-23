@@ -12,27 +12,31 @@
 
 - [介绍](https://chocolatey.org/about)
 - [安装](https://chocolatey.org/install)
+```powershell
+# powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+```
 
 #### 配置
 
 - https://chocolatey.org/docs/chocolatey-configuration
-- 如果未下载，可新建环境变量`ChocolateyInstall`为自定义的安装地址
+- 如果未下载，可新建环境变量`ChocolateyInstall`为自定义的安装地址，比如`D:\Chocolatey`
 - 如果已经下载安装，需要修改Chocolatey安装的位置
   - 因为后续下载的一些包默认是在`C:\ProgramData\Chocolatey\lib`，可以预见会越来越大，C盘由要开始清盘行动
   - 简单粗暴把`C:\ProgramData\Chocolatey`剪切到其他盘，将系统环境变量`ChocolateyInstall`改成剪切后的地址
 
-- [配置](https://chocolatey.org/docs/commands-config)
-- 修改包下载地址，安装时修改见[这里](https://github.com/chocolatey/choco/wiki/Installation#install-with-powershellexe)
+- [配置命令文档](https://chocolatey.org/docs/commands-config)
 
 - 设置缓存路径
 
 ```bash
-choco config set cacheLocation c:\temp\choco
+choco config set cacheLocation F:\Cache\choco
 ```
 
 #### 安装软件
 
-- [安装](https://chocolatey.org/docs/commands-install)
+- [choco安装软件命令文档](https://chocolatey.org/docs/commands-install)
+- 
 
 #### 相关文章
 
