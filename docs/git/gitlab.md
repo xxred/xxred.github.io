@@ -98,6 +98,11 @@ $ cd /var/opt/gitlab && tar xvf /backup/backup.tar"
 
 - 运行过程同安装过程，挂载上面的数据卷即可，也可以直接解压到主机目录，进行主机目录映射
 - 注意一定要确认解压的文件夹的相对路径是否正确，这是可能会犯的一个错。因为上面的打包过程，很可能把数据打包成带路径`/var/opt/gitlab`的格式，导致容器中的数据位于`/var/opt/gitlab/var/opt/gitlab`
+- 如果容器一直重启，可能是文件权限问题，执行以下命令更新文件权限
+
+```bash
+sudo docker exec -it [gitlab容器名或容器id] update-permissions
+```
 
 ## svn 迁移到 git
 
