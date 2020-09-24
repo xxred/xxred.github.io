@@ -2,9 +2,11 @@
 
 - 收集日常开发可能碰到的开发软件
 
-|                      软件名称                      |                      最新版下载                      |                          更多版本（镜像）地址                          |
-| :------------------------------------------------: | :--------------------------------------------------: | :--------------------------------------------------------------------: |
-| <a href="https://git-scm.com/">git-for-windows</a> | <a href="javascript:;" v-on:click="git">点击下载</a> | <a href="https://npm.taobao.org/mirrors/git-for-windows/">淘宝镜像</a> |
+|                              软件名称                               |                                      最新版下载                                      |                                  更多版本（镜像）地址                                   | 简介 |
+| :-----------------------------------------------------------------: | :----------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: | :--: |
+| <a href="https://git-scm.com/" target="_blank" >git-for-windows</a> |                 <a href="javascript:;" v-on:click="git">点击下载</a>                 | <a href="https://npm.taobao.org/mirrors/git-for-windows/" target="_blank" >淘宝镜像</a> |      |
+|                       <a href="" >fiddler</a>                       | <a href="https://api.getfiddler.com/win/latest" download="Fiddler.exe" >点击下载</a> |                                                                                         | 抓包 |
+|                               python                                |                                                                                      |     <a href=“https://npm.taobao.org/mirrors/python/”  target="_blank">淘宝镜像</a>      |
 
 <script>
 import axios from 'axios'
